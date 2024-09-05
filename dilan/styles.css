@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-position: center 0px;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #000;
+    color: #00ff37;
+    padding: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0; 
+    left: 100%; 
+    height: 100vh;
+    width: 250px;
+    background-color: #00ca6c;
+    color: #ff0000;
+    transform: translateX(0); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+    transform: translateX(-100%); 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 15px 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #00e056;
+    padding: 20px;
+}
+
+.logo-container {
+    flex: 1; /* Permite que el logo ocupe todo el espacio disponible */
+    text-align: center;
+}
+.menu-btn {
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+    padding: 10px 7px;
+    background-color: #88ff00;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.logo {
+    margin-right: 0;
+    width: 300px;
+}
+.verciones {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+  }
+  
+  .verciones-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  
+  .verciones {
+    text-align: center;
+  }
+  
+  .verciones img {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }  
+  
+  .card {
+    width: 18rem;
+  }
+  
+  .card-img-top {
+    height: 200px; /* Adjust image height if needed */
+    object-fit: cover; /* Crop image to fit within container */
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+  }
+  .comunidad {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .nueva-publicacion {
+    margin-bottom: 20px;
+  }
+  
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .nueva-publicacion textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Permite redimensionar el textarea verticalmente */
+  } 
+  
