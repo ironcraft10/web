@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #000;
+  color: #2bff00;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  transform: translateX(-100%);
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  text-align: right;
+}
+
+.menu-btn {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+
+.logo {
+  margin-right: 0;
+  width: 100px;
+}
+
+.menu-btn {
+  margin-left: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #15ff00;
+}
+
+h1 {
+  text-align: right;
+  color: #fff;
+}
+h2 {
+  text-align: right;
+  color: #fff;
+}
+
+.juegos-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows games to wrap to multiple lines */
+}
+
+.juego {
+  display: flex; /* Enables arranging image and title side-by-side */
+  align-items: center; /* Aligns title vertically with image */
+  margin-bottom: 20px; /* Adds spacing between games */
+}
+
+.juego-imagen {
+  width: 200px; /* Adjust image width as needed */
+  margin-right: 20px; /* Adds space between image and title */
+}
+
+.juego-titulo {
+  font-size: 18px;
+}
+
+
+.card {
+  width: 25%; /* Ajusta el ancho de cada tarjeta */
+  margin: 10px;
+}
+.card-img-top {
+  height: 200px; /* Adjust image height if needed */
+  object-fit: cover; /* Crop image to fit within container */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+.comunidad {
+  text-align: center;
+  padding: 20px;
+}
+
+.nueva-publicacion {
+  margin-bottom: 20px;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.comentario {
+  border: 1px solid rgb(17, 106, 52);;
+  padding: 10px;
+}
+.nueva-publicacion textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 150px; /* Ajusta la altura según tus necesidades */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  resize: vertical; /* Permite redimensionar el textarea verticalmente */
+  background-color: rgb(17, 106, 52);
+  color: #fff;
+} 
