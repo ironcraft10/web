@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>impcine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Tu Logo" class="logo">
+      </a>
+    </div>
+    <button class="menu-btn">☰</button>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">............</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="favoritos.html">favoritos</a></li>
+      <li><a href="acerca_de.html">Acerca de</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+    </ul>
+  </nav>
+
+  <section class="peliculas">
+    <h2>Películas</h2>
+    <div class="peliculas-container">
+      <a href="https://ww5.cuevana3.to/39/fast-furious-6-a-todo-gas-6" class="pelicula">
+        <div class="card card-hover">
+          <div class="card">
+          <img src="{{ url_for('static', filename='img/img1.png') }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Rápidos y Furiosos 6<hr></h5>
+          </div>
+        </div>
+        </div>
+      </a>
+      <a href="https://ww5.cuevana3.to/3363/guardianes-de-la-galaxia" class="pelicula">
+        <div class="card card-hover">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/img2.png') }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Guardianes de la Galaxia Vol. 1<hr></h5>
+          </div>
+        </div>
+        </div>
+        </a>
+      <a href="https://ww5.cuevana3.to/3198/jumanji-bienvenidos-a-la-jungla" class="pelicula">
+        <div class="card card-hover">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/img3.png') }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Jumanji: Bienvenidos a la Jungla<hr></h5>
+          </div>
+        </div>
+        </div>
+      </a>
+      <a href="https://ww5.cuevana3.to/17253/juego-de-gemelas" class="pelicula">
+        <div class="card card-hover">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/img4.png') }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">juego de gemelas<hr></h5>
+          </div>
+        </div>
+        </div>
+      </a>
+      <div class="peliculas-container">
+        <a href="https://www.netflix.com/title/81142851" class="pelicula">
+          <div class="card card-hover">
+            <div class="card">
+              <img src="{{ url_for('static', filename='img/img5.png') }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">lokillo en mi otra yo<hr></h5>
+            </div>
+          </div>
+          </div>
+        </a>
+  </section>
+  <footer>
+    <div class="our_logo">
+      <img src="{{ url_for('static', filename='img/our_logo.png') }}" alt="our_logo" width="100" height="100">
+    </div>
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
