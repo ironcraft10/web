@@ -11,6 +11,10 @@ body {
     min-height: 100vh
 }
 
+.h2 {
+  text-align: left;
+}
+
 .menu-btn {
     font-size: 24px;
     cursor: pointer;
@@ -103,7 +107,7 @@ header {
   transform: translateX(-100%); /* Move the container to the left */
 }
   
-  .pelicula {
+  .peliculas {
     text-align: center;
     margin-top: 20px
   }
@@ -184,3 +188,4 @@ footer {
   width: 100px;
   height: 100px;
 }
+

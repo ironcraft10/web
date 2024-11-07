@@ -103,6 +103,11 @@ header {
   transform: translateX(-100%); /* Move the container to the left */
 }
   
+  .pelicula {
+    text-align: center;
+    margin-top: 20px
+  }
+  
   .pelicula img {
     width: 200px; /* Ajusta el ancho según tus necesidades */
     height: auto; /* Mantiene la proporción de la imagen */
